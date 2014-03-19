@@ -67,6 +67,29 @@ Toc tree::
   first_file 과 second_file 에 있는 secton header 들을 2 단계까지 보여준다.
   
 
+Other Tutorials
+---------------
+- `A ReStructuredText Primer <http://docutils.sourceforge.net/docs/user/rst/quickstart.html>`_
+  
+
+`emacs keybinding <http://docutils.sourceforge.net/docs/user/emacs.html#key-bindings>`_
+---------------------------------------------------------------------------------------
+
+- C-c C-a
+  Commands to adjust the section headers and work with the hierarchy they build.
+  C-c C-a C-a: 현재 line 을 section header 로 만든다
+- C-c C-c
+  Commands to compile the current reStructuredText document to various output formats.
+- C-c C-l
+  Commands to work with lists of various kinds.
+- C-c C-r
+  Commands to manipulate the current region.
+- C-c C-t
+  Commands to create and manipulate a table of contents.
+
+위 명령어 + C-h: 관련 명령어들에 대한 설명을 볼 수 있다.
 
 
+
+  
 
