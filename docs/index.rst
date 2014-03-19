@@ -13,6 +13,7 @@ Contents:
 
    restructuredtext_tutorial
 
+   celery_tutorial
 
 
 Indices and tables

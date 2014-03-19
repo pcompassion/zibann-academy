@@ -1,9 +1,9 @@
 
-celery 의 task 상황을 알아보는 법
-=================================
+celery 의 task management
+=========================
 
-python shell 에서
------------------
+list tasks
+----------
 
 .. code:: python
 
@@ -26,4 +26,15 @@ python shell 에서
    # reserved: received but waiting to be executed
    i.reserved()
 
+   
+deleting pending tasks
+----------------------
+
+.. code:: bash
+   $ celeryctl purge
+
+.. code:: python
+
+   from celery.task.control import discard_all
+   discard_all()
    
