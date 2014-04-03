@@ -13,6 +13,10 @@ Contents:
 
    restructuredtext_tutorial
 
+   emacs
+
+   less
+
    celery_tutorial
 
 
