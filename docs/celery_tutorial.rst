@@ -1,14 +1,25 @@
+=================
+ Celery Tutorial
+=================
+
 
 celery 의 task management
 =========================
 
+`Flower <https://github.com/mher/flower>`_
+------
+.. code:: bash
+   celery flower --broker=redis://@localhost:6379/0 --port=
+
+
 list tasks
 ----------
+
+`Inspecting Workers <http://docs.celeryproject.org/en/latest/userguide/workers.html?highlight=revoke#inspecting-workers>`_
 
 .. code:: python
 
    """
-   `Inspecting Workers <http://docs.celeryproject.org/en/latest/userguide/workers.html?highlight=revoke#inspecting-workers>`_
    """
    from celery.task.control import inspect
    
@@ -38,3 +49,10 @@ deleting pending tasks
    from celery.task.control import discard_all
    discard_all()
    
+
+kill all celery workers
+-----------------------
+
+.. code:: bash
+   # `Stopping the worker <http://celery.readthedocs.org/en/latest/userguide/workers.html#stopping-the-worker>`_
+   $ $ ps auxww | grep 'celery -A momsite worker' | awk '{print $2}' | xargs kill -9
