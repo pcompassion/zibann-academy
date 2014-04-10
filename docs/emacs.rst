@@ -212,6 +212,8 @@ vc mode
 smartparens mode
 ================
 
+conf file: https://github.com/Fuco1/smartparens/wiki/Example-configuration
+
 (M-m 으로 커서가 원하는 노드의 제일 앞에 있다고 가정한다)
 
 +----------------------------------------+----------------------------------------+
